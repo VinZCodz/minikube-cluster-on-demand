@@ -19,9 +19,8 @@ minikube addons enable dashboard
 minikube addons enable metrics-server
 
 echo "--------------------------------------------------------"
-echo "✅ Cluster Setup Complete!"
-echo "1. Run 'minikube dashboard' in this terminal."
-echo "2. Click the 'Open in Browser' button in the popup."
-echo "3. If you see JSON, append this to the URL:"
-echo "   /api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/"
+echo "🚀 CLUSTER IS LIVE!"
+echo "1. Run: 'minikube dashboard' to see your pods."
+echo "2. Run: 'minikube tunnel' in a new tab to enable the Gateway."
+echo "3. Run: 'kubectl apply -f examples/all-in-one.yaml' to test."
 echo "--------------------------------------------------------"
