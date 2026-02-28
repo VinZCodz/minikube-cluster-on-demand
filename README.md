@@ -35,8 +35,6 @@ If this one-click Minikube setup saved you 30 minutes of YAML-wrangling today, p
 ## 🤝 Contribute & Support
 Found a bug or have a better way to optimize for 2-core machines? Open an Issue or submit a Pull Request. Let's make the "Instant K8s" experience even faster together!
 
-💡 Tip: If the Dashboard shows a "Service Unavailable" error initially, wait 60 seconds. On 2-core machines, the metrics-server and dashboard pods need a moment to "breathe" before the proxy can connect.
-
 ---
 
 **Use for Dev | Test | CI/CD Actions | Practice | Basically a throw away cluster after use!**
