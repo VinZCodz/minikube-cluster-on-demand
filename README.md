@@ -34,10 +34,14 @@ In Codespaces, minikube dashboard behaves exactly like a proxy. It will stay run
 - Resource Light: Fine-tuned to run smoothly on GitHub's 2-core / 8GB RAM basic tier.
 - Visual-First: Built-in support for the Kubernetes Dashboard to see your "breathing" pods live.
 
-## 🤝 Contribute & Support
-Found a bug? Nothing is perfect! Please report it or raise a PR—I’ll review it as soon as possible.
+## 🌟 Support the Project
+If this one-click Minikube setup saved you 30 minutes of YAML-wrangling today, please:
+- Star this repo to help others find it! ⭐️
+- Fork it and build your own Gateway API experiments. 🍴
+- Share it on LinkedIn or X/Twitter and tag me! 🐦
 
-If this helped your workflow, feel free to Star ⭐ and Fork 🍴 the repo to show your support!
+## 🤝 Contribute & Support
+Found a bug or have a better way to optimize for 2-core machines? Open an Issue or submit a Pull Request. Let's make the "Instant K8s" experience even faster together!
 
 💡 Tip: If the Dashboard shows a "Service Unavailable" error initially, wait 60 seconds. On 2-core machines, the metrics-server and dashboard pods need a moment to "breathe" before the proxy can connect.
 
