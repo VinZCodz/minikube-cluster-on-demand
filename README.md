@@ -10,8 +10,9 @@ Boom! Your cluster is ready in minutes.
 - Launch the Dashboard:
   - In a new terminal, run: ```minikube dashboard``` (Note: Keep this terminal open! It acts as the bridge to your GUI)
 - Access the "Breathing" GUI:
-  - Click the link generated in the step above. If you see a list of JSON "Paths," append this exact string to the end of your browser URL to reveal the dashboard:
-```api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/```
+  - GitHub will auto-forward the Dashboard port (e.g., 45637). Open it from the PORTS tab.
+  - If you see JSON "Paths," simply append this exact string to your browser's address bar to reveal the visual dashboard:
+    ```api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/```
 - Power up the Gateway
   - The Gateway API is ready for your manifests! To route traffic from your browser to your pods, run this in a separate terminal: ```minikube tunnel```
 - Test the Demo App
