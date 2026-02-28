@@ -1,0 +1,26 @@
+{
+    "name": "minikube-cluster-on-demand",
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+          "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
+            "version": "latest",
+            "helm": "latest",
+            "minikube": "latest"
+        }
+    },
+
+    "postCreateCommand": "minikube start -p vinzcodz-cluster --nodes=3 --memory=1500mb --driver=docker && minikube addons enable dashboard && minikube addons enable metrics-server",
+  
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-kubernetes-tools.vscode-kubernetes-tools",
+                "redhat.vscode-yaml"
+            ]
+        }
+    }
+}
