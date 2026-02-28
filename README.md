@@ -30,7 +30,7 @@ Boom! Your cluster is ready in minutes.
 If this one-click Minikube setup saved you 30 minutes of YAML-wrangling today, please:
 - Star this repo to help others find it! ⭐️
 - Fork it and build your own Gateway API experiments. 🍴
-- Share it on LinkedIn or X/Twitter and tag me! 🐦
+- Share it on [LinkedIn & tag me!](https://www.linkedin.com/in/vinay-hm/)  🐦
 
 ## 🤝 Contribute & Support
 Found a bug or have a better way to optimize for 2-core machines? Open an Issue or submit a Pull Request. Let's make the "Instant K8s" experience even faster together!
