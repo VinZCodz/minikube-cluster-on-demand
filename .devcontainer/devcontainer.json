@@ -11,11 +11,6 @@
             "minikube": "latest"
         }
     },
-    "forwardPorts": [8080, 9090],
-    "portsAttributes": {
-        "8080": { "label": "App Gateway", "onAutoForward": "openBrowser" },
-        "9090": { "label": "Dashboard GUI", "onAutoForward": "openBrowser" }
-    },
     "postCreateCommand": "bash .devcontainer/setup-k8s.sh",
     "customizations": {
         "vscode": {
