@@ -2,45 +2,41 @@
 Instant Single node Kubernetes cluster inside your GitHub Codespaces.
 
 ## ⚡ Quick Start Guide
-- Press ```,``` (comma) on this repo --> Click ```Create new codespace```
+- Press ```,``` (comma) on this repo —> Click ```Create new codespace```
   
 Boom! Your cluster is ready in minutes.
-  
+<p align="center">
   <img width="400" height="39" alt="image" src="https://github.com/user-attachments/assets/c80dc516-59ef-47f9-8486-0cc3e1889a1d" />
+</p>
 
-
-## 🚀 The 30-Second "Hello World"
-- Launch the Dashboard:
-  - In a new terminal, run: ```minikube dashboard``` (Note: Keep this terminal open! It acts as the bridge to your GUI)
-- 🎨 Access the "Breathing" GUI:
-  - Go to the Ports tab in your Codespace and Click the Globe Icon 🌐 ```Open in Browser```
-    
-    <img width="900" height="224" alt="image" src="https://github.com/user-attachments/assets/4a6e877d-eb75-4f06-a4ab-c527ce2d77ba" />
-    
+## 🎨 Access the "Breathing" GUI:
+- Run this command in a new terminal (keep it open): ```minikube dashboard --port=9090```
+- Go to the Ports tab and Click the Globe Icon 🌐 ```Open in Browser``` at Port 9090.       
   - If you see JSON "Paths," simply append this exact string to your browser's address bar to reveal the visual dashboard:
     ```/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/```
-    
-    
-- Power up the Gateway
-  - The Gateway API is ready for your manifests! To route traffic from your browser to your pods, run this in a separate terminal: ```minikube tunnel```
-- Test the Demo App
-  - See the Gateway API in action immediately: ```kubectl apply -f examples/all-in-one.yaml```
-    
-    <img width="900" height="900" alt="image" src="https://github.com/user-attachments/assets/d9e8c210-1998-4a6e-958d-dc446046fd22" />
 
+  <img width="900" height="900" alt="image" src="https://github.com/user-attachments/assets/d9e8c210-1998-4a6e-958d-dc446046fd22" />
 
+## 🚀 The 30-Second to "Hello World"
+
+- Deploy the Demo App from examples ```kubectl apply -f examples/all-in-one.yaml```
+- Check Running pods ```kubectl get pods``` 
+- Power up the Gateway ```kubectl port-forward service/traefik -n traefik-v3 8000:80```
+    
 ## 🎯 Why this Template?
 
 - Zero-Config: Skip the 20-minute minikube start and CRD manual installs.
 - Modern Networking: Pre-loaded with the Kubernetes Gateway API (the successor to Ingress).
-- Resource Light: Fine-tuned to run smoothly on GitHub's 2-core / 8GB RAM basic tier.
-- Visual-First: Built-in support for the Kubernetes Dashboard to see your "breathing" pods live.
-  
+- Resource Lite: Fine-tuned to run smoothly on GitHub's 2-core / 8GB RAM basic tier.
+<p align="center">
   <img width="900" height="78" alt="image" src="https://github.com/user-attachments/assets/915c89e6-3a4f-4fb0-8553-f219c66b4008" />
+</p>
+
+- Visual-First: Built-in support for the Kubernetes Dashboard to see your "breathing" pods live.
 
 ---
 
---| **Use for Dev | Test | CI/CD Actions | Practice | Basically a throw away cluster after use!** |--
+—| **Use for Dev | Test | CI/CD Actions | Practice | Basically a throw away cluster after use!** |—
 
 ---
 ## 🌟 Support the Project
