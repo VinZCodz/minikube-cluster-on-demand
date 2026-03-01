@@ -13,7 +13,6 @@ helm repo update
 helm upgrade --install traefik traefik/traefik \
   --namespace traefik-v3 --create-namespace \
   --set providers.kubernetesGateway.enabled=true \
-  --set gateway.infrastructure.enabled=true \
   --set gateway.namespacePolicy=All
 
 sleep 5
@@ -21,20 +20,10 @@ sleep 5
 minikube addons enable dashboard
 minikube addons enable metrics-server
 
-echo "Launching Dashboard & Tunnel in background..."
-minikube dashboard --port=9090 2>&1 &
-minikube tunnel > /dev/null 2>&1 &
-
-sleep 5
-
-nohup kubectl port-forward svc/traefik -n traefik-v3 8080:80 --address='0.0.0.0' > /dev/null 2>&1 &
-
 echo "--------------------------------------------------------"
 echo "🚀 CLUSTER IS LIVE!"
-echo "🎨 DASHBOARD: Go to the Ports tab and Click the Globe Icon 🌐 'Open in Browser' on 9090 port"
-echo "🔗 MAGIC URL: Add this to the end of the Dashboard URL in the browser:"
-echo "   /api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/"
-echo "🚀 APP: Port 8080 is already bridged via the tunnel!"
-echo ""
-echo "Run: 'kubectl apply -f examples/all-in-one.yaml' to test."
+echo "1. Run: 'minikube dashboard --port=9090' to see your pods on K8S UI."
+echo "2. Run: 'kubectl apply -f examples/all-in-one.yaml' to deploy sample Hello World app."
+echo "3. Check Running pods: 'kubectl get pods'
+echo "4. Forward Port: 'kubectl port-forward service/traefik -n traefik-v3 8000:80'
 echo "--------------------------------------------------------"
