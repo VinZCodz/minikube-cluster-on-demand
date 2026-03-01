@@ -32,13 +32,9 @@ Boom! Your cluster is ready in minutes.
   <img width="900" height="78" alt="image" src="https://github.com/user-attachments/assets/915c89e6-3a4f-4fb0-8553-f219c66b4008" />
 </p>
 
+
 - Visual-First: Built-in support for the Kubernetes Dashboard to see your "breathing" pods live.
 
----
-
-—| **Use for Dev | Test | CI/CD Actions | Practice | Basically a throw away cluster after use!** |—
-
----
 ## 🌟 Support the Project
 If this one-click Minikube setup saved you 30 minutes of YAML-wrangling today, please:
 - Star this repo to help others find it! ⭐️
@@ -48,6 +44,13 @@ If this one-click Minikube setup saved you 30 minutes of YAML-wrangling today, p
 ## 🤝 Contribute & Support
 Found a bug or have a better way to optimize for 2-core machines? Open an Issue or submit a Pull Request. Let's make the "Instant K8s" experience even faster together!
 
+---
 
+<p align="center">
+  Use for Dev | Test | CI/CD Actions | Practice | Basically a throw away cluster after use!
+  <img width="408" height="59" alt="image" src="https://github.com/user-attachments/assets/f4245975-7ec9-4926-b68d-d54acf888129" />
+</p>
+<p align="center">
+  Go ahead, give it a spin! 🚀
+</p>
 
-Go ahead, give it a spin! 🚀
