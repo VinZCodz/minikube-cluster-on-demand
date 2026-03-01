@@ -13,10 +13,13 @@ helm repo update
 helm upgrade --install traefik traefik/traefik \
   --namespace traefik-v3 --create-namespace \
   --set providers.kubernetesGateway.enabled=true \
+  --set gateway.infrastructure.enabled=true \
   --set gateway.namespacePolicy=All
 
 minikube addons enable dashboard
 minikube addons enable metrics-server
+
+kubectl port-forward svc/traefik -n traefik-v3 8080:80 --address='0.0.0.0' > /dev/null 2>&1 &
 
 echo "--------------------------------------------------------"
 echo "🚀 CLUSTER IS LIVE!"
