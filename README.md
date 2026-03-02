@@ -2,12 +2,13 @@
 Instant Single node Kubernetes cluster inside your GitHub Codespaces.
 
 ## ⚡ Quick Start Guide
-- Press ```,``` (comma) on this repo —> Click ```Create new codespace```
+- Press ```,``` (comma) on this repo* —> Click ```Create new codespace```
   
 Boom! Your cluster is ready in minutes.
 <p align="center">
   <img width="400" height="39" alt="image" src="https://github.com/user-attachments/assets/c80dc516-59ef-47f9-8486-0cc3e1889a1d" />
 </p>
+*Note: Make sure you are logged into Github for keystroke to be detected.
 
 ## 🎨 Access the "Breathing" GUI:
 - Run this command in a new terminal (keep it open): ```minikube dashboard --port=9090```
