@@ -53,6 +53,12 @@ North-South traffic is managed through the Kubernetes Gateway API, which is enab
   <img width="900" height="78" alt="image" src="https://github.com/user-attachments/assets/915c89e6-3a4f-4fb0-8553-f219c66b4008" />
 </p>
 
+## 🛠️ Handy Commands
+
+- To Stop Cluster: ```minikube stop```
+- To Start Cluster: ```minikube start```
+- Cluster/Endpoints frozen: ```docker restart $(docker ps -q)```
+  
 ## 🌟 Support the Project
 If this one-click Minikube setup saved you hassles of YAML-wrangling today, please:
 - Star this repo to help others find it! ⭐️
