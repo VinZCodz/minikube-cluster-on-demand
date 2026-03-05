@@ -13,15 +13,28 @@ _Boom! Your cluster is ready in minutes!_
   - If you see JSON "Paths," simply append this exact string to your browser's address bar to reveal the visual dashboard:
     ```/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/```
 
-## 🚀 Deploy your "Hello World" App in 30 Seconds inside cluster!
+_Done! You wasted NO time on local setup. You've a fully working cluster, up and running!_
 
-- Deploy the Demo App from examples ```kubectl apply -f examples/all-in-one.yaml```
+<p align="center">
+<img width="900" height="900" alt="image" src="https://github.com/user-attachments/assets/d9e8c210-1998-4a6e-958d-dc446046fd22" />
+</p>
+
+## 🛜 Modern Networking via Gateway API (Optional)
+North-South traffic is managed through the Kubernetes Gateway API, which is enabled and preconfigured in your cluster. 
+
+- Use the provided example listener: ```kubectl apply -f examples/Gateway.yaml```
+- Or, **create custom Gateway** listeners to define specific ports, protocols, and routing rules for your services.
+
+<p align="center">
+ 
+</p>
+
+## 🚀 Deploy "Hello World" Demo App in 30 sec inside cluster! (Optional)
+
+- Deploy ```kubectl apply -f examples/all-in-one.yaml```
 - Check Running pods ```kubectl get pods``` 
 - Power up the Gateway ```kubectl port-forward service/traefik -n traefik-v3 8000:80```
-
-_Done! You wasted no time on local setup. You've a fully working cluster, up and running!_
-  
-  <img width="900" height="900" alt="image" src="https://github.com/user-attachments/assets/d9e8c210-1998-4a6e-958d-dc446046fd22" />
+- **Important!** Delete when done ```kubectl delete -f examples/all-in-one.yaml``` to free the port for your app use.
 
 ## 🎯 Why this Template?
 - ```Zero-Config```: Skip the hassel of manual setup. Just get to your work!
