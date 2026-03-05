@@ -7,6 +7,10 @@ Instant Single node Kubernetes cluster inside your GitHub Codespaces.
 
 _Boom! Your cluster is ready in minutes!_
 
+<p align="center">
+<img width="900" height="300" alt="image" src="https://github.com/user-attachments/assets/a92ab1a7-1afd-47b7-aa45-5afab757769c" />
+</p>
+
 ## 🎨 Access the "Breathing" GUI:
 - Run this command in a new terminal (keep it open): ```minikube dashboard --port=9090```
 - UI is Ready: Go to ```Ports``` > Port 9090 > ```Open in Browser 🌐```.     
@@ -26,13 +30,13 @@ North-South traffic is managed through the Kubernetes Gateway API, which is enab
 - Or, **create custom Gateway** listeners to define specific ports, protocols, and routing rules for your services.
 
 <p align="center">
- 
+ <img width="400" height="75" alt="image" src="https://github.com/user-attachments/assets/ea4c566b-d323-40a1-858a-c93ec7e4ef1c" />
 </p>
 
 ## 🚀 Deploy "Hello World" Demo App in 30 sec inside cluster! (Optional)
 
 - Deploy ```kubectl apply -f examples/all-in-one.yaml```
-- Check Running pods ```kubectl get pods``` 
+- Check Running pods ```kubectl get pods -n traefik-v3 ``` 
 - Power up the Gateway ```kubectl port-forward service/traefik -n traefik-v3 8000:80```
 - **Important!** Delete when done ```kubectl delete -f examples/all-in-one.yaml``` to free the port for your app use.
 
