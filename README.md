@@ -37,8 +37,8 @@ North-South traffic is managed through the Kubernetes Gateway API, which is enab
 
 - Deploy ```kubectl apply -f examples/all-in-one.yaml```
 - Check Running pods ```kubectl get pods -n traefik-v3 ``` 
-- Power up the Gateway ```kubectl port-forward service/traefik -n traefik-v3 8000:80```
-- **Important!** Delete when done ```kubectl delete -f examples/all-in-one.yaml``` to free the port for your app use.
+- Power up the Gateway ```kubectl port-forward service/traefik -n traefik-v3 8080:80``` & Head to Port 8080. Hello World!
+- **Important!** End the port forward ```ctrl+c``` & Delete the app when done ```kubectl delete -f examples/all-in-one.yaml``` to free the port for your app use.
 
 ## 🎯 Why this Template?
 - ```Zero-Config```: Skip the hassel of manual setup. Just get to your work!
