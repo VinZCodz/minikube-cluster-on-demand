@@ -1,3 +1,7 @@
+<p align='center'>
+  <a href='https://codespaces.new/VinZCodz/minikube-cluster-on-demand'><img src='https://github.com/codespaces/badge.svg' alt='Open in GitHub Codespaces' style='max-width: 100%;'></a>
+</p>
+
 # 🏗️ minikube-cluster-on-demand
 Instant Single node Kubernetes cluster inside your GitHub Codespaces.
 
@@ -75,6 +79,10 @@ Found a bug or have a better way to optimize for 2-core machines? Open an Issue 
   <img width="408" height="59" alt="image" src="https://github.com/user-attachments/assets/f4245975-7ec9-4926-b68d-d54acf888129" />
 </p>
 <p align="center">
+<a href='https://codespaces.new/VinZCodz/minikube-cluster-on-demand'><img src='https://github.com/codespaces/badge.svg' alt='Open in GitHub Codespaces' style='max-width: 100%;'></a>
+</p>
+<p align="center">
   Go ahead, give it a spin! 🚀
 </p>
+
 
